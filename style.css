@@ -1,0 +1,251 @@
+/* Page background */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Legacy';
+  src: url('legacy.ttf') format('opentype');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.bracket {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Outer container box */
+.outer-container {
+  width: min(1265px, 100vw - 40px); /* never exceed 1360px, always leave 20px on each side */
+  margin-left: auto;                 /* center horizontally */
+  margin-right: auto;                /* center horizontally */
+  box-sizing: border-box;            /* include padding in width if needed */
+  background: #fff; /* white inner box */
+  border: 2px solid #231F20;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #231F20;
+}
+
+.tab-link {
+  flex: 1;
+  padding: 15px 0;
+  background: #707A84;          /* base tab color */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  
+  border: none;              /* remove all borders */
+  
+  border-radius: 0;          /* remove any rounding if needed */
+  
+  box-shadow: none;          /* remove default shadow */
+  outline: none;             /* remove focus outline */
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.tab-link:hover {
+  background: #b0b0b0;       /* subtle hover color */
+  box-shadow: none;           /* make sure hover doesn’t add shadow */
+}
+
+.tab-link:active {
+  background: #999;           /* clicked / pressed color */
+  box-shadow: none;           /* remove pressed shadow */
+}
+
+.tab-link.active {
+  background: #005EB8;        /* active tab color */
+  box-shadow: none;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Games wrapper */
+.games-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Individual game box */
+.game-box {
+  width: 290px;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #231F20;
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Jerseys */
+.jerseys {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0px;
+}
+
+.jerseys img {
+  width: 120px;
+  height: auto;
+}
+
+/* Game info */
+.game-info {
+  text-align: center;
+  width: 100%;
+}
+
+.round-name {
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #005daa;
+}
+
+.score {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.details {
+  font-size: 11px;
+  color: #666;
+  margin-top: -10px;
+}
+
+.datetime {
+  font-size: 11px;
+  color: #666;
+  margin-top: 0px;
+}
+
+/* ===== HEADER ===== */
+.archive-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.archive-title {
+  font-size: 48px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+    font-family: 'Legacy', sans-serif;
+}
+
+/* ===== HORIZONTAL LAYOUT FIX ===== */
+.year-grid {
+  display: flex;              /* THIS is what keeps them horizontal */
+  flex-direction: row;        /* force row (just in case) */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== CARD BASE (always same when inactive) ===== */
+.year-card {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+  color: #222;
+  border: 2px solid #d9d9d9;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Prevent weird stacking behavior from inline elements */
+.year-card {
+  display: flex;
+}
+
+/* Image */
+.year-card img {
+max-width: 80px;   /* maximum width */
+  max-height: 55px;  /* maximum height */
+  width: auto;       /* scale width automatically */
+  height: auto;      /* scale height automatically */
+  margin-bottom: 5px;
+}
+
+/* Text */
+.year-card span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Hover (ONLY inactive) */
+.year-card:not(.active):hover {
+  background-color: #e6e6e6;
+}
+
+/* ===== ACTIVE STATE ===== */
+.year-card.active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+  border: 3px solid var(--active-border);
+}
+
+/* ===== YEAR COLORS (only apply when active) ===== */
+.year-2024 {
+  --active-bg: #1D191A;
+  --active-text: #F1551C;
+  --active-border: #F1551C;
+}
+
+.year-2025 {
+  --active-bg: #3D3935;
+  --active-text: #2E9BA0;
+  --active-border: #2E9BA0;
+}
+
+.year-2026 {
+  --active-bg: #0c1b2a;
+  --active-text: #ff6a00;
+  --active-border: #ff6a00;
+}
