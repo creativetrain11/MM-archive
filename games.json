@@ -1,0 +1,107 @@
+[
+  {
+    "year": 2026,
+    "round": "Elite Eight",
+    "teams": ["Iowa Hawkeyes", "Illinois Fighting Ilini"],
+    "images": [
+      "https://i.imgur.com/QClIiGA.png",
+      "https://i.imgur.com/UjuGmD7.png"
+    ],
+    "scores": [
+      "[9] Iowa Hawkeyes - 59",
+      "[3] Illinois Fighting Ilini - 71"
+    ],
+    "datetime": "Saturday, March 28, 2026 - 6:09 PM",
+    "details": "Houston, TX / South Region"
+  },
+  {
+    "year": 2026,
+    "round": "Elite Eight",
+    "teams": ["Purdue Boilermakers", "Arizona Wildcats"],
+    "images": [
+      "https://i.imgur.com/kEupAJb.png",
+      "https://i.imgur.com/YRJaSOc.png"
+    ],
+    "scores": [
+      "[2] Purdue Boilermakers - 64",
+      "[1] Arizona Wildcats - 79"
+    ],
+    "datetime": "Saturday, March 28, 2026 - 8:49 PM",
+    "details": "San Jose, CA / West Region"
+  },
+  {
+    "year": 2026,
+    "round": "Elite Eight",
+    "teams": ["Tennessee Volunteers", "Michigan Wolverines"],
+    "images": [
+      "https://i.imgur.com/AVoPvTK.png",
+      "https://i.imgur.com/s3DVN6N.png"
+    ],
+    "scores": [
+      "[6] Tennessee Volunteers - 62",
+      "[1] Michigan Wolverines - 95"
+    ],
+    "datetime": "Sunday, March 29, 2026 - 2:15 PM",
+    "details": "Chicago, IL / Midwest Region"
+  },
+  {
+    "year": 2026,
+    "round": "Elite Eight",
+    "teams": ["Connecticut Huskies", "Duke Blue Devils"],
+    "images": [
+      "https://i.imgur.com/hiuFDEJ.png",
+      "https://i.imgur.com/blfjGIc.png"
+    ],
+    "scores": [
+      "[2] Connecticut Huskies - 73",
+      "[1] Duke Blue Devils - 72"
+    ],
+    "datetime": "Sunday, March 29, 2026 - 5:05 PM",
+    "details": "Washington, DC / East Region"
+  },
+  {
+    "year": 2026,
+    "round": "Sweet Sixteen",
+    "teams": ["Texas Longhorns", "Purdue Boilermakers"],
+    "images": [
+      "https://i.imgur.com/4xIMrCr.png",
+      "https://i.imgur.com/D7WmNHK.png"
+    ],
+    "scores": [
+      "[11] Texas Longhorns - 77",
+      "[#] Purdue Boilermakers - 79"
+    ],
+    "datetime": "Thursday, March 26, 2026 - 7:10 PM",
+    "details": "San Jose, CA / West Region"
+  },
+  {
+    "year": 2026,
+    "round": "Sweet Sixteen",
+    "teams": ["Iowa Hawkeyes", "Nebraska Cornhuskers"],
+    "images": [
+      "https://i.imgur.com/FlB51GC.png",
+      "https://i.imgur.com/rLXjl8r.png"
+    ],
+    "scores": [
+      "[9] Iowa Hawkeyes - 77",
+      "[4] Nebraska Cornhuskers - 71"
+    ],
+    "datetime": "Thursday, March 28, 2026 - 7:30 PM",
+    "details": "Houston, TX / South Region"
+  },
+  {
+    "year": 2026,
+    "round": "Sweet Sixteen",
+    "teams": ["Arkansas Razorback", "Arizona Wildcats"],
+    "images": [
+      "https://i.imgur.com/IUsYLN6.png",
+      "https://i.imgur.com/YRJaSOc.png"
+    ],
+    "scores": [
+      "[4] Arkansas Razorback - 88",
+      "[1] Arizona Wildcats - 109"
+    ],
+    "datetime": "Thursday, March 26, 2026 - 10:06 PM",
+    "details": "San Jose, CA / West Region"
+  }
+]
