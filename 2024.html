@@ -8,11 +8,60 @@
 </head>
 <body>
 
+<div class="title-bar">
+  <img src="https://i.imgur.com/lL40YyC.png" class="side-img left" alt="">
+  
+  <span class="title-text">March Madness Jersey Archive</span>
+  
+  <img src="https://i.imgur.com/xyB3Z37.png" class="side-img right" alt="">
+</div>
+
+  <div class="dropdown-content">
+    <img src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2026/03/29/Updated-DI-MBB-bracket.jpg?itok=AJ0xK0Nz" alt="Dropdown Image">
+  </div>
+</div>
+
 <header class="archive-header">
-  <h1 class="archive-title">MARCH MADNESS JERSEY ARCHIVE</h1>
 
   <div class="year-grid">
 
+<!-- 
+
+        <a href="2016.html" class="year-card year-2016">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/2016_NCAA_Men%27s_Final_Four_logo.svg/1920px-2016_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2016 Final Four">
+      <span>2016</span>
+    </a>
+
+        <a href="2017.html" class="year-card year-2017">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/2017_NCAA_Men%27s_Final_Four_logo.svg/1920px-2017_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2017 Final Four">
+      <span>2017</span>
+    </a>
+
+        <a href="2018.html" class="year-card year-2018">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/2018_NCAA_Men%27s_Final_Four_logo.svg/1920px-2018_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2018 Final Four">
+      <span>2018</span>
+    </a>
+
+        <a href="2019.html" class="year-card year-2019">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/2019_NCAA_Men%27s_Final_Four_logo.svg/1920px-2019_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2019 Final Four">
+      <span>2019</span>
+    </a>
+
+        <a href="2021.html" class="year-card year-2021">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg/1920px-2021_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2021 Final Four">
+      <span>2021</span>
+    </a>
+
+        <a href="2022.html" class="year-card year-2022">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/2022_NCAA_Men%27s_Final_Four_logo.svg/3840px-2022_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2022 Final Four">
+      <span>2022</span>
+    </a>
+
+    <a href="2023.html" class="year-card year-2023">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/2023_NCAA_Men%27s_Final_Four_logo.svg/1920px-2023_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2023 Final Four">
+      <span>2023</span>
+    </a>
+-->
     <a href="2024.html" class="year-card year-2024 active">
       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/2024_NCAA_Men%27s_Final_Four_logo.svg/1280px-2024_NCAA_Men%27s_Final_Four_logo.svg.png" alt="2024 Final Four">
       <span>2024</span>
@@ -23,13 +72,32 @@
       <span>2025</span>
     </a>
 
-    <a href="2026.html" class="year-card year-2026">
+
+
+    <a href="index.html" class="year-card year-2026">
       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/2026_men%27s_Final_Four_Logo.svg/1920px-2026_men%27s_Final_Four_Logo.svg.png" alt="2026 Final Four">
       <span>2026</span>
-
     </a>
+
+        <a href="team.html" class="year-card year-team">
+      <img src="https://i.imgur.com/RlWmEmG.png" alt="By Team">
+      <span>By Team</span>
+    </a>
+
   </div>
 </header>
+
+<div class="dropdown-container">
+  <button class="dropdown-header">
+    <span>View Bracket</span>
+    <span class="arrow">▼</span>
+  </button>
+
+  <div class="dropdown-content">
+    <img src="https://www.ncaa.com/_flysystem/public-s3/styles/original/public-s3/images/2026/03/29/Updated-DI-MBB-bracket.jpg?itok=AJ0xK0Nz" alt="Dropdown Image">
+  </div>
+</div>
+
 
   <div class="outer-container">
     <!-- Tabs -->
@@ -43,49 +111,81 @@
       <button class="tab-link" data-tab="national-championship">Championship</button>
     </div>
 
-    <!-- Tab Contents -->
-    <div class="tab-content active" id="first-four">
-      <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+   <div id="first-four" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="round-64" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="round-32" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="sweet-sixteen" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="elite-eight" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="final-four" class="tab-content"><div class="games-wrapper"></div></div>
+<div id="national-championship" class="tab-content"><div class="games-wrapper"></div></div>
 
-    <div class="tab-content" id="round-64">
-            <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
-    <div class="tab-content" id="round-32">
-                  <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+  fetch("games.json")
+    .then(res => res.json())
+    .then(games => {
 
-    <div class="tab-content" id="sweet-sixteen">
-                  <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
-    
+      const roundMap = {
+        "First Four": "first-four",
+        "Round of 64": "round-64",
+        "Round of 32": "round-32",
+        "Sweet Sixteen": "sweet-sixteen",
+        "Elite Eight": "elite-eight",
+        "Final Four": "final-four",
+        "National Championship": "national-championship"
+      };
 
-    <div class="tab-content" id="elite-eight">
-                  <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+      games.forEach(game => {
+        if (game.year !== 2024) return;
 
-    <div class="tab-content" id="final-four">
-                  <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+        const tabId = roundMap[game.round];
+        if (!tabId) return;
 
-    <div class="tab-content" id="national-championship">
-                  <div class="games-wrapper">
-       <P>Coming soon... </P>
-            </div>
-            </div>
+        const wrapper = document.querySelector(`#${tabId} .games-wrapper`);
+
+        const gameBox = document.createElement("div");
+        gameBox.className = "game-box";
+
+        gameBox.innerHTML = `
+          <div class="jerseys">
+            <img src="${game.awayJersey}" alt="Away Jersey">
+            <img src="${game.homeJersey}" alt="Home Jersey">
+          </div>
+
+          <div class="game-info">
+            <p class="round-name">${game.year} ${game.round}</p>
+
+            <p class="score">
+              ${game.awayTeam} - ${game.awayScore}
+            </p>
+
+            <p class="score">
+              ${game.homeTeam} - ${game.homeScore}
+            </p>
+
+            <p class="datetime">
+              ${game.date} - ${game.time}
+            </p>
+
+            <p class="details">
+              ${game.city_state} / ${game.region}
+            </p>
+          </div>
+        `;
+
+        wrapper.appendChild(gameBox);
+      });
+
+    const activeTab = document.querySelector(".tab-link.active");
+    if (activeTab) activeTab.click();
+
+    });
+});
+
+
+</script>
+
 
   </div>
 
@@ -105,6 +205,16 @@
       });
     });
   </script>
+
+  <script>
+  const dropdown = document.querySelector(".dropdown-container");
+  const header = dropdown.querySelector(".dropdown-header");
+
+  header.addEventListener("click", () => {
+    dropdown.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 </html>
