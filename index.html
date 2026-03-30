@@ -966,45 +966,55 @@
       </div>
     </div>
 
-<div class="tab-content" id="elite-eight">
-  <div class="games-wrapper" id="elite-eight-wrapper">
-    <!-- Game boxes will be inserted here from JSON -->
+<div id="elite-eight" class="tab-content">
+  <div class="games-wrapper">
+    <!-- JS will populate game boxes here automatically from JSON -->
   </div>
 </div>
 
 <script>
-  // Fetch the JSON file
-  fetch('Games.json')
-    .then(res => res.json())
-    .then(games => {
-      const container = document.getElementById('elite-eight-wrapper');
-      
-      // Filter for 2026 Elite Eight games only
-      const eliteEightGames = games.filter(
-        game => game.year === 2026 && game.round === "Elite Eight"
-      );
+document.addEventListener("DOMContentLoaded", () => {
 
-      // Loop through each game and create the game box
-      eliteEightGames.forEach(game => {
-        const div = document.createElement('div');
-        div.className = 'game-box';
-        div.innerHTML = `
+  fetch("games.json") // 🔥 this loads your actual file
+    .then(res => res.json())
+    .then(gamesJSON => {
+
+      const elite8Wrapper = document.querySelector('#elite-eight .games-wrapper');
+
+      if (!elite8Wrapper) {
+        console.error("Elite Eight container not found");
+        return;
+      }
+
+      // Filter for Elite Eight
+      const elite8Games = gamesJSON.filter(game => game.round === 'Elite Eight');
+
+      // Create game boxes
+      elite8Games.forEach(game => {
+        const gameBox = document.createElement('div');
+        gameBox.classList.add('game-box');
+
+        gameBox.innerHTML = `
           <div class="jerseys">
-            <img src="${game.images[0]}" alt="${game.teams[0]} Jersey">
-            <img src="${game.images[1]}" alt="${game.teams[1]} Jersey">
+            <img src="${game.awayJersey}">
+            <img src="${game.homeJersey}">
           </div>
           <div class="game-info">
             <p class="round-name">${game.round}</p>
-            <p class="score">${game.scores[0]}</p>
-            <p class="score">${game.scores[1]}</p>
+            <p class="score">${game.awayTeam} - ${game.awayScore}</p>
+            <p class="score">${game.homeTeam} - ${game.homeScore}</p>
             <p class="datetime">${game.datetime}</p>
-            <p class="details">${game.details}</p>
+            <p class="details">${game.location}</p>
           </div>
         `;
-        container.appendChild(div);
+
+        elite8Wrapper.appendChild(gameBox);
       });
+
     })
-    .catch(err => console.error("Failed to load games:", err));
+    .catch(err => console.error("JSON ERROR:", err));
+
+});
 </script>
 
     <div class="tab-content" id="final-four">
