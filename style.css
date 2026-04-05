@@ -447,7 +447,7 @@ max-width: 65px;   /* maximum width */
 }
 
 .team-dropdown.active .team-dropdown-content {
-  max-height: 2000px;
+  max-height: 5000px;
 }
 
 .team-dropdown-content div {
